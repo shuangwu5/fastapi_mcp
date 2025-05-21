@@ -335,7 +335,7 @@ class FastApiMCP:
         else:
             raise ValueError(f"Invalid router type: {type(router)}")
 
-        messages_path = f"{base_path}{mount_path}/messages/"
+        messages_path = f"{mount_path}/messages/"
 
         sse_transport = FastApiSseTransport(messages_path)
 
